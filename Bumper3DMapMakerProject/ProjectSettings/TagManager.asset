@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - EndPoint
+  - ColorChangeItem
+  - Box
+  - GameOverObject
+  - Cube
+  - Cylinder
+  - Sphere
   layers:
   - Default
   - TransparentFX
