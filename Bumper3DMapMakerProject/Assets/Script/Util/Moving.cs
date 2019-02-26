@@ -88,6 +88,24 @@ public class Moving : MonoBehaviour
         }
 
     }
+    void MovingTranslate(){
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        }
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            transform.Translate(Vector3.back * speed * Time.deltaTime);
+        }
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.Translate(Vector3.left * speed * Time.deltaTime);
+        }
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.Translate(Vector3.right * speed * Time.deltaTime);
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -107,21 +125,21 @@ public class Moving : MonoBehaviour
             default:
                 break;
         }
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            transform.position = transform.position + Vector3.forward;
         }
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            transform.Translate(Vector3.back * speed * Time.deltaTime);
+            transform.position = transform.position + Vector3.back;
         }
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            transform.Translate(Vector3.left * speed * Time.deltaTime);
+            transform.position = transform.position + Vector3.left;
         }
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            transform.Translate(Vector3.right * speed * Time.deltaTime);
+            transform.position = transform.position + Vector3.right;
         }
         if (Input.GetKey(KeyCode.Q))
         {

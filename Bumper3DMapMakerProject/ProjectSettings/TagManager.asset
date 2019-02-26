@@ -12,6 +12,7 @@ TagManager:
   - Cylinder
   - Sphere
   - NotGameOverObject
+  - Cone
   layers:
   - Default
   - TransparentFX
