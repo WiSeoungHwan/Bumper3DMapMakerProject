@@ -13,6 +13,20 @@ TagManager:
   - Sphere
   - NotGameOverObject
   - Cone
+  - Diamond
+  - Donut
+  - LowPolyBox
+  - Pyramid
+  - RoundedCube
+  - LowPolySphere
+  - Ground
+  - BigWall
+  - BigPyramid
+  - BigBox
+  - Coin
+  - LongBox
+  - LongBoxHorizontal
+  - BigSphere
   layers:
   - Default
   - TransparentFX

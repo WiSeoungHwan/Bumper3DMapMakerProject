@@ -72,7 +72,9 @@ public class Moving : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.D))
         {
-            Destroy(other.gameObject);
+            if(!other.tag.Equals("Ground")){
+                Destroy(other.gameObject);
+            }
         }
         if (other.tag.Equals("ColorChangeItem"))
         {
